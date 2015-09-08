@@ -57,7 +57,7 @@ Interpreted as: planning the league games of football, baseball, ...
 
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/useCaseOverview.png[]
 
-あらゆる組織が計画問題に直面しています。製品やサービスは、_制約を受け_ 、限定されたリソース (従業員, 資産, 時間, 金) を使って提供されています。OptaPlanner は、その計画を最適化することによって、より少ないリソースでより多くの業務を実行できるようにします。これは、_オペレーションズリサーチ_ 分野の一つである_制約充足プログラミング_ として知られています。
+あらゆる組織が計画問題に直面しています。製品やサービスは、_制約を受け_ 、限定されたリソース (従業員, 資産, 時間, 金) を使って提供されています。OptaPlanner は、そのような計画を最適化することによって、より少ないリソースでより多くの業務を実行できるようにします。これは、_オペレーションズリサーチ_ 分野の一つである _制約充足プログラミング_ として知られています。
 
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/whatIsAPlanningProblem.png[]
 
@@ -87,7 +87,7 @@ image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_si
 [[aPlanningProblemIsNPCompleteOrNPHard]]
 === 1.3.1. 計画問題は NP 完全または NP 困難
 
-上に挙げたユースケースはすべて、_おそらく_ 、link:http://en.wikipedia.org/wiki/NP-complete[NP 完全]もしくはそれよりも困難な問題です。NP 完全とは、普通の言葉を使うと次のような意味です。
+上に挙げたユースケースはすべて、_おそらく_ 、link:http://en.wikipedia.org/wiki/NP-complete[NP 完全]もしくはそれよりも困難な問題です。NP 完全とは、普通の言葉で表現すると次のような意味です。
 
 * ある問題について得られた解を、簡単に、適度な時間内に検証できる。
 * ある問題の最適解を適度な時間内に見つける確実な方法がない。(*)
