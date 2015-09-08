@@ -26,7 +26,6 @@ xref:communityAndSupport[1.5.3. コミュニティとサポート]:::
 xref:relationshipWithKie[1.5.4. Drools や jBPM との関係]::: 
 
 
- 
 
 [[whatIsOptaPlanner]]
 == 1.1 OptaPlanner とは何ですか？
@@ -45,7 +44,7 @@ Interpreted as: which obtains optimized solutions for planning problems
 * *実施スケジューリング：* 会議, 設備, メンテナンス作業, 広告などのスケジューリング
 * *教育時間割り：* 授業, 講座, 試験, 会議プレゼンテーションなどのスケジューリング
 * *輸送経路計画：* 荷物および／または人を乗せた乗り物 (トラック, 列車, 船舶, 飛行機など) の計画
-* *箱詰め：* コンテナ, トラック, 船舶への積載や倉庫への保管, さらにはクラウドコンピュータのノードなども
+* *箱詰め（ビンパッキング）：* コンテナ, トラック, 船舶への積載や倉庫への保管, さらにはクラウドコンピュータのノードなども
 * *注文生産スケジューリング：* 自動車組立ライン, 機械処理, 人員作業などの計画
 * *在庫削減：* 紙や鋼, カーペットなどの切断で生じる無駄の最少化
 * *スポーツにおけるスケジューリング：* フットボールや野球などのリーグ戦計画
@@ -63,11 +62,6 @@ image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_si
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/whatIsAPlanningProblem.png[]
 
 OptaPlanner の助けがあれば、普通の Java(TM) プログラマーでも制約充足問題を効率よく解くことができます。OptaPlanner の内部では、最適化のためのヒューリスティック法およびメタヒューリスティック法が非常に効率的なスコア計算と組み合わされています。
-////
-150907 by Takugo
-Source: efficient score calculation
-原文に従って「効率的」としておいたが、スコア評価の特長を考えると、「効果的」のほうがよいように思う。
-////
 
 
 
@@ -90,19 +84,21 @@ image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_si
 
 上に挙げたユースケースはすべて、_おそらく_ 、link:http://en.wikipedia.org/wiki/NP-complete[NP 完全]もしくはそれよりも困難な問題です。NP 完全とは、普通の言葉で表現すると次のような意味です。
 
-* ある問題について得られた解を、簡単に、適度な時間内に検証できる。
-* ある問題の最適解を適度な時間内に見つける確実な方法がない。(*)
+* 問題の解を、簡単に、適度な時間内に検証できる。
+* 問題の最適解を適度な時間内に見つける確実な方法がない(*)。
 
-Note
-(*) At least, none of the smartest computer scientists in the world have found such a silver bullet yet. But if they find one for 1 NP-complete problem, it will work for every NP-complete problem.
-In fact, there's a $ 1,000,000 reward for anyone that proves if such a silver bullet actually exists or not.
+.注意
+****
+(*) 少なくとも、世界中の頭の切れるコンピュータ科学者でさえ、まだ誰もそのような確実な方法を見出していません。しかし、誰かが 1 つの NP 完全問題について解を一つ見つけたとしたら、その解はすべての NP 完全問題に当てはまることになります。
+実際、link:http://en.wikipedia.org/wiki/P_%3D_NP_problem[そのような確実な方法が実在するかどうか]を証明した人には 100 万ドルの懸賞金が与えられることになっています。
+****
 
-The implication of this is pretty dire: solving your problem is probably harder than you anticipated, because the 2 common techniques won't suffice:
+これは実に恐ろしいことを示唆しています。つまり、次の 2 つの一般的な方法が不十分なものであるために、おそらく、自分の抱える問題を解くのは予想以上に困難だということです。
 
-* A Brute Force algorithm (even a smarter variant) will take too long.
-* A quick algorithm, for example in bin packing, putting in the largest items first, will return a solution that is far from optimal.
+* 総当たりアルゴリズムは、時間がかかりすぎる。（たとえ巧妙に作った変種であっても。）
+* 速成のアルゴリズムは、例えば箱詰め（ビンパッキング）において _Largest First 法に従って物を入れる_ アルゴリズムのように、最適解からはほど遠い解を返してしまう。
 
-By using advanced optimization algorithms, OptaPlanner does find a good solution in reasonable time for such planning problems.
+*OptaPlanner は、先進的な最適化アルゴリズムを使用することによって、そのような計画問題に対して、適度な時間内に良い解を見つけ出します。*
 
 
 
