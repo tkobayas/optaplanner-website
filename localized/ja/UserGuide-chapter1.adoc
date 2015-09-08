@@ -75,7 +75,7 @@ Source: efficient score calculation
 
 OptaPlannerは、link:http://www.apache.org/licenses/LICENSE-2.0.html[Apache ソフトウェアライセンス 2.0]の下で配布される _オープンソース・ソフトウェア_ です。このライセンスは、非常に進歩的で、商用目的での再使用を許可しています。link:http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN[一般向け説明]に目を通してください。
 
-OptaPlanner は、100% 純粋に Java(TM) で作られており、バージョン 1.6 以上のすべての JVM 上で動作します。他の Java(TM) 技術との xref:#integration[統合は非常に簡単] です。OptaPlanner は、xref:#useWithMavenGradleEtc[Maven Central Repository] で利用できます。
+OptaPlanner は、100% 純粋に Java(TM) で作られており、バージョン 1.6 以上のすべての JVM 上で動作します。他の Java(TM) 技術との xref:integration[統合は非常に簡単] です。OptaPlanner は、xref:useWithMavenGradleEtc[Maven Central Repository] で利用できます。
 
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/compatibility.png[]
 
