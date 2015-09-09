@@ -1,10 +1,9 @@
 = Chapter 1. OptaPlanner イントロダクション
 :awestruct-description: Chapter 1. OptaPlanner イントロダクション
 :awestruct-layout: localizedBase
-:awestruct-lang: jp
+:awestruct-lang: ja
 :awestruct-priority: 1.0
 :showtitle:
-xxx
 
 
 
