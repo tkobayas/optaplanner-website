@@ -4,7 +4,6 @@
 :awestruct-lang: ja
 :awestruct-priority: 1.0
 :showtitle:
-xxx
 
 
 
