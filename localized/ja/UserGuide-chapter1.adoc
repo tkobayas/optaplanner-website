@@ -38,7 +38,7 @@ Interpreted as: which obtains optimized solutions for planning problems
 “問題”を最適化するのではないから。
 ////
 
-* *従業員シフト勤務計画：* 看護士や修理工などの勤務表作成
+* *従業員シフト勤務計画：* 看護師や修理工などの勤務表作成
 * *実施スケジューリング：* 会議, 設備, メンテナンス作業, 広告などのスケジューリング
 * *教育時間割り：* 授業, 講座, 試験, 会議プレゼンテーションなどのスケジューリング
 * *輸送経路計画：* 荷物および／または人を乗せた乗り物 (トラック, 列車, 船舶, 飛行機など) の計画
@@ -56,6 +56,11 @@ Interpreted as: planning the league games of football, baseball, ...
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/useCaseOverview.png[]
 
 あらゆる組織が計画問題に直面しています。製品やサービスは、_制約を受け_ 、限定されたリソース (従業員, 資産, 時間, 金) を使って提供されています。OptaPlanner は、そのような計画を最適化することによって、より少ないリソースでより多くの業務を実行できるようにします。これは、_オペレーションズリサーチ_ 分野の一つである _制約充足プログラミング_ として知られています。
+////
+150909 Takugo
+Source: Constraint Satisfaction Programming
+Should be corrected to: Constraint Programming = 制約プログラミング
+////
 
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/whatIsAPlanningProblem.png[]
 
