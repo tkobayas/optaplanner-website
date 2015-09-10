@@ -24,8 +24,7 @@ xref:backwardsCompatibility[1.5.2. 後方互換性]:::
 xref:communityAndSupport[1.5.3. コミュニティとサポート]::: 
 xref:relationshipWithKie[1.5.4. Drools や jBPM との関係]::: 
 
-
-
+[]
 [[whatIsOptaPlanner]]
 == 1.1 OptaPlanner とは何ですか？
 
