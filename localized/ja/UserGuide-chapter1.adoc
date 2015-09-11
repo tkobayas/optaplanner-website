@@ -149,4 +149,46 @@ OptaPlanner は、複数の最適化アルゴリズムを備えており、そ�
 
 
 
+[[downloadAndRunTheExamples]]
+== 1.4. サンプルのダウンロードと実行
+
+[[getTheReleaseZipAndRunTheExamples]]
+=== 1.4.1. 公開 .zip の入手とサンプルの実行
+
+今すぐやってみましょう。
+
+. link:http://www.optaplanner.org/[OptaPlanner ウェブサイト]から OptaPlanner の公開 .zip をダウンロードします。
+. 解凍します。
+. +*examples*+ ディレクトリを開き、スクリプトを実行します。
+
+Linux または Mac：
+
+// [source] //
+----
+$ cd examples
+$ ./runExamples.sh
+----
+
+Windows：
+
+// [source] //
+----
+$ cd examples
+$ runExamples.bat
+----
+
+image::http://docs.jboss.org/optaplanner/release/6.2.0.Final/optaplanner-docs/html_single/images/Chapter-Planner_introduction/distributionZip.png[]
+
+サンプル GUI アプリケーションが開きます。サンプルを一つ選択してください。
+
+image::http://docs.jboss.org/optaplanner/release/6.2.0.Final/optaplanner-docs/html_single/images/Chapter-Planner_introduction/plannerExamplesAppScreenshot.png[]
+
+
+.注意
+****
+OptaPlanner 自体は GUI に対して依存性を持ちません。OptaPlanner は、デスクトップ上とまったく同様に、サーバやモバイル JVM 上でも動作します。
+****
+
+
+
 
