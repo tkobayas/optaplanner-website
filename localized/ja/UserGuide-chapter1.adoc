@@ -38,19 +38,19 @@ Interpreted as: which obtains optimized solutions for planning problems
 “問題”を最適化するのではないから。
 ////
 
-* *従業員シフト勤務計画：* 看護師や修理工などの勤務表作成
-* *実施スケジューリング：* 会議, 設備, メンテナンス作業, 広告などのスケジューリング
-* *教育時間割り：* 授業, 講座, 試験, 会議プレゼンテーションなどのスケジューリング
-* *輸送経路計画：* 荷物および／または人を乗せた乗り物 (トラック, 列車, 船舶, 飛行機など) の計画
-* *箱詰め（ビンパッキング）：* コンテナ, トラック, 船舶への積載や倉庫への保管, さらにはクラウドコンピュータのノードなども
-* *注文生産スケジューリング：* 自動車組立ライン, 機械処理, 人員作業などの計画
-* *在庫削減：* 紙や鋼, カーペットなどの切断で生じる無駄の最少化
-* *スポーツにおけるスケジューリング：* フットボールや野球などのリーグ戦計画
+* *従業員シフト勤務計画:* 看護師や修理工などの勤務表作成
+* *実施スケジューリング:* 会議, 設備, メンテナンス作業, 広告などのスケジューリング
+* *教育時間割り:* 授業, 講座, 試験, 会議プレゼンテーションなどのスケジューリング
+* *輸送経路計画:* 荷物および／または人を乗せた乗り物 (トラック, 列車, 船舶, 飛行機など) の計画
+* *箱詰め（ビンパッキング）:* コンテナ, トラック, 船舶への積載や倉庫への保管, さらにはクラウドコンピュータのノードなども
+* *注文生産スケジューリング:* 自動車組立ライン, 機械処理, 人員作業などの計画
+* *在庫削減:* 紙や鋼, カーペットなどの切断で生じる無駄の最少化
+* *スポーツにおけるスケジューリング:* フットボールや野球などのリーグ戦計画
 ////
 150907 by Takugo
 Source: planning football leagues, baseball leagues, ...
 Interpreted as: planning the league games of football, baseball, ...
-* *財務最適化：* 投資ポートフォリオの最適化, リスク分散など
+* *財務最適化:* 投資ポートフォリオの最適化, リスク分散など
 ////
 
 image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_single/images/Chapter-Planner_introduction/useCaseOverview.png[]
@@ -110,12 +110,12 @@ image::http://docs.jboss.org/optaplanner/release/latest/optaplanner-docs/html_si
 
 計画問題には、多くの場合、少なくとも次のような 2 つの水準の制約があります。
 
-* _ハード制約 (負値)_ は、違反してはならない。例： _1 人の先生が異なる 2 つの授業で同時に教えることはできない。_ 
-* _ソフト制約 (負値)_ は、避けられる限り、違反してはならない。例： _先生 A は、金曜日の午後に教えたくない。_ 
+* _ハード制約 (負値)_ は、違反してはならない。例: _1 人の先生が異なる 2 つの授業で同時に教えることはできない。_ 
+* _ソフト制約 (負値)_ は、避けられる限り、違反してはならない。例: _先生 A は、金曜日の午後に教えたくない。_ 
 
 次のように、正値の制約を持つ問題もあります。
 
-* 可能な限り、_正値のソフト制約 (または報酬)_ が満足されなければならない。例： _先生 Bは、月曜日の朝に教えたい。_ 
+* 可能な限り、_正値のソフト制約 (または報酬)_ が満足されなければならない。例: _先生 Bは、月曜日の朝に教えたい。_ 
 
 基本的な問題 (例えば N Queens 問題) には、ハード制約のみ持つものがあります。ハード制約, ミディアム制約, ソフト制約といったように、3 つ以上の水準の制約を持つ問題もあります。
 
@@ -157,11 +157,13 @@ OptaPlanner は、複数の最適化アルゴリズムを備えており、そ�
 
 今すぐやってみましょう。
 
-. link:http://www.optaplanner.org/[OptaPlanner ウェブサイト]から OptaPlanner の公開 .zip をダウンロードします。
-. 解凍します。
-. +*examples*+ ディレクトリを開き、スクリプトを実行します。
+{empty}1. link:http://www.optaplanner.org/[OptaPlanner ウェブサイト]から OptaPlanner の公開 .zip をダウンロードします。
 
-Linux または Mac：
+{empty}2. 解凍します。
+
+{empty}3. +*examples*+ ディレクトリを開き、スクリプトを実行します。
+
+Linux または Mac:
 
 // [source] //
 ----
@@ -169,7 +171,7 @@ $ cd examples
 $ ./runExamples.sh
 ----
 
-Windows：
+Windows:
 
 // [source] //
 ----
@@ -188,6 +190,154 @@ image::http://docs.jboss.org/optaplanner/release/6.2.0.Final/optaplanner-docs/ht
 ****
 OptaPlanner 自体は GUI に対して依存性を持ちません。OptaPlanner は、デスクトップ上とまったく同様に、サーバやモバイル JVM 上でも動作します。
 ****
+
+
+
+[[runTheExamplesInAnIDE]]
+=== 1.4.2. IDE (IntelliJ, Eclipse, NetBeans) でのサンプルの実行
+
+自分の好みの IDE でサンプルを実行するには次のようにします。
+
+{empty}1. IDE を設定します。
+* IntelliJ IDEA と NetBeans では、+*examples/sources/pom.xml*+ を新しいプロジェクトとして開きます。そうするだけで、残りは Maven が統合してくれます。
+* Eclipse では、ディレクトリ +*examples/sources*+ について新しいプロジェクトを開きます。
+** ファイル +*examples/binaries/optaplanner-examples-_version_.jar*+ を除く、ディレクトリ +*bineries*+ および +*examples/binaries*+ に含まれるすべての jar をクラスパスに追加します。
+** Java ソースディレクトリ +*src/main/java*+ と Java リソースディレクトリ +*src/main/resources*+ を追加します。
+////
+150911 Takugo
+Source: 
+Add all the jars to the classpath from the directory binaries and the directory examples/binaries
+Interpreted as: 
+Add all the jars in the directories binaries and examples/binaries to the classpath
+////
+
+{empty}2. Run 設定を作成します。
+* メインクラス: +org.optaplanner.examples.app.OptaPlannerExamplesApp+
+* VM パラメータ (オプション): +-Xmx512M -server+
+
+{empty}3. この Run 設定を実行します。
+
+
+
+[[useWithMavenGradleEtc]]
+=== 1.4.3. OptaPlanner を Maven や Gradle, Ivy, Buildr, ANT とともに使う
+
+OptaPlanner の jar は、link:http://search.maven.org/#search|ga|1|org.optaplanner[Maven Central Repository] でも利用できます。（link:https://repository.jboss.org/nexus/index.html#nexus-search;gav~org.optaplanner~~~~[JBoss Maven Repository] でも利用できます。）
+////
+150914 Takugo
+Source: central maven repository
+Translated: Maven Central Respository
+////
+
+Maven を使う場合は、以下のように、プロジェクトの +*pom.xml*+ で +optaplanner-core+ に依存性を追加してください。
+
+----
+    <dependency>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-core</artifactId>
+    </dependency>
+----
+
+これは、Gradle, Ivy, Buildr についても同様です。最新版は、link:http://search.maven.org/#search|ga|1|org.optaplanner[Maven Central Repository] で確認してください。
+
+他の OptaPlanner モジュールも使用することになる可能性があるため、以下のように、Maven の +dependencyManagement+ で +optaplanner-bom+ をインポートすることを推奨します。こうしておくと、OptaPlanner のバージョン指定は一回だけで済みます。
+
+----
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.optaplanner</groupId>
+        <artifactId>optaplanner-bom</artifactId>
+        <type>pom</type>
+        <version>...</version>
+        <scope>import</scope>
+      </dependency>
+      ...
+    </dependencies>
+  </dependencyManagement>
+----
+
+まだ (Ivy なしで) ANT を使用している場合は、ダウンロードした zip 内のディレクトリ +*binaries*+ にあるすべての jar を自分のクラスパスにコピーします。
+////
+150914 Takugo
+Source: copy ... in your class path
+Interpreted as: copy ... to your class path
+////
+
+.注意
+****
+ダウンロードした zip 内のディレクトリ +*binaries*+ には、+optaplanner-core+ が実際に使用するよりもはるかに多くの jar を含まれています。+optaplanner-benchmark+ など他のモジュールが使用する jar も含まれています。
+////
+150914 Takugo
+Source: far more jars then
+Corrected: far more jars than
+////
+
+Maven リポジトリの +*pom.xml*+ ファイルを確認し、(特定のバージョンのための) 特定のモジュールについて、最小の依存性セットを決めてください。
+****
+
+
+
+[[buildFromSource]]
+=== 1.4.4. OptaPlanner をソースからビルドする
+
+OptaPlanner をソースからビルドするのは簡単です。
+
+{empty}1. link:https://help.github.com/articles/set-up-git/[Git を設定]し、GitHub からの +clone optaplanner+ を実行します。(または、link:https://github.com/droolsjbpm/optaplanner/zipball/master[zipball] をダウンロードします。)
+
+----
+$ git clone git@github.com:droolsjbpm/optaplanner.git optaplanner
+...
+----
+
+.注意
+****
+GitHub アカウントを持っていない場合や、ローカルの Git インストール設定がそのアカウントでなされていない場合は、代わりに次のコマンドを使用して認証問題を回避してください。
+----
+$ git clone https://github.com/droolsjbpm/optaplanner.git optaplanner
+...
+----
+****
+
+{empty}2. link:http://maven.apache.org/[Maven] を使ってビルドします。
+
+----
+$ cd optaplanner
+$ mvn clean install -DskipTests
+...
+----
+
+.注意
+****
+Maven の初回は、jar をダウンロードする必要があるため、時間がかかるかもしれません。
+****
+
+{empty}3. サンプルを実行します。
+
+----
+$ cd optaplanner-examples
+$ mvn exec:exec
+...
+----
+
+{empty}4. 好みの IDE でソースを編集します。
+
+{empty}5. オプション: Java プロファイラを使用します。
+
+
+
+[[governance]]
+== 1.5. 管理・運営
+
+[[statusOfOptaPlanner]]
+=== 1.5.1. OptaPlanner のレベルの高さ
+
+OptaPlanner が持つ特長:
+
+* *安定性*: ユニットごとのテスト, 統合環境でのテスト, ストレステストによって非常によくテストされている。
+* *信頼性*: 世界中で、製品で使用されている。
+* *スケーラビリティ*: サンプルの一つでは、50000 個の変数を扱い、5000 個ごとにそれぞれ、複数の制約の種類を扱い、何億個もの可能な制約の照合を行っている。
+* *整備された文書*: 詳細な本マニュアルや多くのサンプルの一つを見てください。
 
 
 
