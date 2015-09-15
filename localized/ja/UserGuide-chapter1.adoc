@@ -369,7 +369,23 @@ Interpreted as: the impl classes are still subject to changes.
 
 link:http://www.optaplanner.org/community/forum.html[私たちのコミュニティーの公開フォーラム]での質問やlink:https://issues.jboss.org/browse/PLANNER[課題トラッカー]でのバグ報告、機能要望を歓迎します。GitHub への pull 要求を大いに歓迎し、優先的に扱います！ご自身の改善をオープンソース化すれば、それに対して私たちが加える専門的なチェックやさらなる改良をご自身のために役立てることができます。
 
-Red Hat は、中核チームを雇用する形で、OptaPlanner の展開を支援しています。企業向けのサポートやコンサルティングについては、link:http://www.optaplanner.org/community/product.html[BRMS および BPMS 製品] (含 OptaPlanner) を参照するか、link:http://www.redhat.com/en/about/contact/sales[Red Hat へお問い合わせ]ください。
+Red Hat は、中核となるチームを雇用する形で、OptaPlanner の展開を後援しています。企業向けのサポートやコンサルティングについては、link:http://www.optaplanner.org/community/product.html[BRMS および BPMS 製品] (含 OptaPlanner) を参照するか、link:http://www.redhat.com/en/about/contact/sales[Red Hat へお問い合わせ]ください。
+
+
+
+[[relationshipWithKie]]
+=== 1.5.4. Drools や jBPM との関係
+
+OptaPlanner は、link:http://www.kiegroup.org/[KIE プロジェクト・グループ]の一部です。KIE グループは、link:http://www.drools.org/[Drools] ルールエンジンと link:http://www.jbpm.org/[jBPM] ワークフローエンジンとともに、定期的に (通常 1〜2 回/月) リリースされます。
+////
+150916 Takugo
+Source: It releases regularly
+Interpreted as: The KIE group is released regularly
+////
+
+image:http://docs.jboss.org/optaplanner/release/6.2.0.Final/optaplanner-docs/html_single/images/Chapter-Planner_introduction/kieFunctionalityOverview.png[]
+
+Drools を用いたオプションの統合についてより多く知るには、link:http://docs.jboss.org/optaplanner/release/6.2.0.Final/optaplanner-docs/html_single/index.html#architectureOverview[構造の概要]を参照してください。
 
 
 
